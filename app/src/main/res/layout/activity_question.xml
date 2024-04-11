@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.yondikavl.aritmateka.QuestionActivity">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/twoOptionRemoveBtn"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:backgroundTint="@color/buttonColor"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ProgressBar
+                        android:id="@+id/circularProgressBar"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:indeterminateOnly="false"
+                        android:progressDrawable="@drawable/circular_progress_bar" />
+
+                    <TextView
+                        android:id="@+id/timeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/circularProgressBar"
+                        android:layout_alignTop="@id/circularProgressBar"
+                        android:layout_alignEnd="@id/circularProgressBar"
+                        android:layout_alignBottom="@id/circularProgressBar"
+                        android:gravity="center"
+                        android:text="@string/dummy_time"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/noOfQuestionTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/circularProgressBar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginVertical="8dp"
+                        android:text="@string/number_of_question"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:backgroundTint="@color/backgroundColor"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/questionTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/question"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:cardElevation="10dp"
+                app:strokeColor="@color/backgroundColor"
+                app:strokeWidth="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/firstOptionBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:layout_marginVertical="4dp"
+                            android:layout_marginHorizontal="8dp"
+                            android:layout_weight="1"
+                            android:textSize="24sp"
+                            android:backgroundTint="@color/buttonColor"
+                            android:text="@string/dummy_option1" />
+
+                        <Button
+                            android:id="@+id/secondOptionBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:layout_marginVertical="4dp"
+                            android:layout_marginHorizontal="8dp"
+                            android:layout_weight="1"
+                            android:textSize="24sp"
+                            android:backgroundTint="@color/buttonColor"
+                            android:text="@string/dummy_option2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/thirdOptionBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:layout_marginVertical="4dp"
+                            android:layout_marginHorizontal="8dp"
+                            android:layout_weight="1"
+                            android:textSize="24sp"
+                            android:backgroundTint="@color/buttonColor"
+                            android:text="@string/dummy_question3" />
+
+                        <Button
+                            android:id="@+id/fourthOptionBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:layout_marginVertical="4dp"
+                            android:layout_marginHorizontal="8dp"
+                            android:layout_weight="1"
+                            android:textSize="24sp"
+                            android:backgroundTint="@color/buttonColor"
+                            android:text="@string/dummy_question4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/twoOptionRemoveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/backgroundColor"
+        android:textSize="20sp"
+        android:text="@string/detele_option" />
+
+</RelativeLayout>
