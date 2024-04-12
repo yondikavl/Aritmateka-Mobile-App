@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="10dp"
+    android:layout_marginHorizontal="8dp"
     app:cardBackgroundColor="@color/white"
     app:cardElevation="10dp"
     app:strokeColor="@color/backgroundColor"
@@ -33,12 +32,13 @@
 
             <Button
                 android:id="@+id/yesBtn"
+                style="@style/Widget.App.Button.Fill"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 android:layout_marginVertical="4dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginHorizontal="4dp"
                 android:layout_weight="1"
-                android:backgroundTint="@color/buttonColor"
+                android:background="@drawable/button"
                 android:text="@string/Ya"
                 android:textSize="20sp" />
 
@@ -48,11 +48,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 android:layout_marginVertical="4dp"
-                android:layout_marginStart="8dp"
+                android:layout_marginHorizontal="4dp"
                 android:layout_weight="1"
                 android:text="@string/Tidak"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/buttonColor"
+                android:background="@drawable/button_outline"
                 android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>

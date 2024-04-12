@@ -123,7 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
+                    android:layout_margin="8dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -136,22 +136,24 @@
                             android:layout_width="match_parent"
                             android:layout_height="?actionBarSize"
                             android:layout_marginVertical="4dp"
-                            android:layout_marginHorizontal="8dp"
+                            android:layout_marginHorizontal="4dp"
                             android:layout_weight="1"
                             android:textSize="24sp"
-                            android:backgroundTint="@color/buttonColor"
-                            android:text="@string/dummy_option1" />
+                            android:text="@string/dummy_option1"
+                            android:background="@drawable/button"
+                            style="@style/Widget.App.Button.Fill" />
 
                         <Button
                             android:id="@+id/secondOptionBtn"
                             android:layout_width="match_parent"
                             android:layout_height="?actionBarSize"
                             android:layout_marginVertical="4dp"
-                            android:layout_marginHorizontal="8dp"
+                            android:layout_marginHorizontal="4dp"
                             android:layout_weight="1"
                             android:textSize="24sp"
-                            android:backgroundTint="@color/buttonColor"
-                            android:text="@string/dummy_option2" />
+                            android:text="@string/dummy_option2"
+                            android:background="@drawable/button"
+                            style="@style/Widget.App.Button.Fill" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -164,22 +166,24 @@
                             android:layout_width="match_parent"
                             android:layout_height="?actionBarSize"
                             android:layout_marginVertical="4dp"
-                            android:layout_marginHorizontal="8dp"
+                            android:layout_marginHorizontal="4dp"
                             android:layout_weight="1"
                             android:textSize="24sp"
-                            android:backgroundTint="@color/buttonColor"
-                            android:text="@string/dummy_question3" />
+                            android:text="@string/dummy_question3"
+                            android:background="@drawable/button"
+                            style="@style/Widget.App.Button.Fill" />
 
                         <Button
                             android:id="@+id/fourthOptionBtn"
                             android:layout_width="match_parent"
                             android:layout_height="?actionBarSize"
                             android:layout_marginVertical="4dp"
-                            android:layout_marginHorizontal="8dp"
+                            android:layout_marginHorizontal="4dp"
                             android:layout_weight="1"
                             android:textSize="24sp"
-                            android:backgroundTint="@color/buttonColor"
-                            android:text="@string/dummy_question4" />
+                            android:text="@string/dummy_question4"
+                            android:background="@drawable/button"
+                            style="@style/Widget.App.Button.Fill" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -191,13 +195,14 @@
 
     <Button
         android:id="@+id/twoOptionRemoveBtn"
+        style="@style/Widget.App.Button.Fill"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/backgroundColor"
+        android:background="@drawable/button"
         android:textSize="20sp"
         android:text="@string/detele_option" />
 

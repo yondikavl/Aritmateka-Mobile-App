@@ -40,5 +40,5 @@
         android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/buttonColor"/>
+        android:background="@drawable/button"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

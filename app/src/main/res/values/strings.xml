@@ -16,4 +16,5 @@
     <string name="correct">Benar</string>
     <string name="wrong">Salah</string>
     <string name="resume">Lanjut</string>
+    <string name="level">Level</string>
 </resources>

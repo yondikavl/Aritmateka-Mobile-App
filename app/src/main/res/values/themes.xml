@@ -20,19 +20,24 @@
     </style>
 
     <style name="Widget.App.Button.Fill" parent="Widget.Material3.Button">
-<!--        <item name="shapeAppearance">@style/CutShape</item>-->
+        <item name="shapeAppearance">@drawable/button</item>
+        <item name="android:backgroundTint">@color/buttonColor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/rubikbold</item>
     </style>
     <style name="Widget.App.Button.Outline" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:textColor">@color/buttonColor</item>
+        <item name="shapeAppearance">@drawable/button_outline</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="backgroundTint">@color/white</item>
         <item name="strokeColor">@color/buttonColor</item>
         <item name="strokeWidth">4dp</item>
     </style>
 
     <style name="CardViewStyle" parent="Widget.Material3.CardView.Outlined">
-        <item name="shapeAppearanceOverlay">@style/CutShape</item>
+        <item name="shapeAppearance">@drawable/button_outline</item>
     </style>
     <style name="BottomCardViewStyle" parent="Widget.Material3.CardView.Outlined">
         <item name="shapeAppearanceOverlay">@style/BottomCutShape</item>
