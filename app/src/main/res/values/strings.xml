@@ -3,16 +3,13 @@
     <string name="math_quiz">Aritmateka</string>
     <string name="start">Mulai</string>
     <string name="dummy_time">60</string>
-    <string name="number_of_question">Question 1/10</string>
-    <string name="question">25 + ? = 50</string>
     <string name="dummy_option1">25</string>
     <string name="dummy_option2">15</string>
     <string name="dummy_question3">5</string>
     <string name="dummy_question4">10</string>
-    <string name="detele_option">Hapus dua opsi</string>
-    <string name="Quit">Apakah kamu yakin ingin keluar?</string>
-    <string name="Ya">Ya</string>
-    <string name="Tidak">Tidak</string>
+    <string name="delete_option">Hapus dua opsi</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
     <string name="correct">Benar</string>
     <string name="wrong">Salah</string>
     <string name="resume">Lanjut</string>

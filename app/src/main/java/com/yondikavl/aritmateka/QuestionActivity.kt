@@ -1,9 +1,9 @@
 package com.yondikavl.aritmateka
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.graphics.Color
 import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -13,7 +13,10 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
-import com.yondikavl.aritmateka.R
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.yondikavl.aritmateka.databinding.ActivityQuestionBinding
 import com.yondikavl.aritmateka.models.QuestionItem
 import com.yondikavl.aritmateka.models.QuestionSplit
@@ -23,9 +26,6 @@ import com.yondikavl.aritmateka.util.SharedPreferenceManger
 import com.yondikavl.aritmateka.util.invisible
 import com.yondikavl.aritmateka.util.setupDialog
 import com.yondikavl.aritmateka.util.visible
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import org.json.JSONArray
 import java.text.DecimalFormat
 import kotlin.math.roundToInt
@@ -75,6 +75,7 @@ class QuestionActivity : AppCompatActivity() {
 
     private lateinit var questionList : ArrayList<ArrayList<QuestionItem>>
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(questionBinding.root)
@@ -197,6 +198,7 @@ class QuestionActivity : AppCompatActivity() {
     }
 
     private var mLastClickTime : Long = 0
+    @SuppressLint("SetTextI18n")
     private fun setAnswerTxt(view: View) {
         if (SystemClock.elapsedRealtime() - mLastClickTime < 1000){
             return
@@ -231,11 +233,13 @@ class QuestionActivity : AppCompatActivity() {
 
     }
 
+    @SuppressLint("SetTextI18n")
     private fun nextQuestion() {
         question()
         questionBinding.noOfQuestionTxt.text = "Question ${correctQuestionPos+1} / 10"
     }
 
+    @SuppressLint("SetTextI18n")
     private fun gameScoreNextRound() {
         correctScoreTxt = gameScoreNextRoundDialog.findViewById(R.id.correctScoreTxt)
         wrongScoreTxt = gameScoreNextRoundDialog.findViewById(R.id.wrongScoreTxt)
@@ -315,6 +319,7 @@ class QuestionActivity : AppCompatActivity() {
         questionBinding.timeTxt.text = timeFormat1
     }
 
+    @SuppressLint("SetTextI18n")
     private fun onBackPressedMethod() {
         questionTimer.pauseTimer()
         correctScoreTxt.text = correctQuestionPos.toString()

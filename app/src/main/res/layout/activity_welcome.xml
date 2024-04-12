@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/back"
+    android:background="@color/white"
     tools:context="com.yondikavl.aritmateka.WelcomeActivity">
 
     <ImageView
@@ -16,7 +16,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="-100dp"
-        android:src="@drawable/ic_launcher_foreground"/>
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/app_name" />
 
     <TextView
         android:id="@+id/tvSplash"
@@ -40,5 +41,6 @@
         android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="16dp"
+        android:backgroundTint="@color/buttonColor"
         android:background="@drawable/button"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

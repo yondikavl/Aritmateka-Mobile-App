@@ -1,9 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Aritmateka" parent="Theme.Material3.Light.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-
         <item name="fontFamily">@font/rubikbold</item>
         <item name="android:statusBarColor">@color/black</item>
     </style>
@@ -12,8 +9,7 @@
 
     <style name="MySplash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
-        <!--    Here   windowSplashScreenBrandingImage work target api S(Api 31) <=  -->
-        <item name="android:windowSplashScreenBrandingImage" tools:targetApi="s">@drawable/app_banner_with_background</item>
+        <item name="android:windowSplashScreenBrandingImage" tools:targetApi="s">@drawable/ic_launcher_foreground</item>
         <item name="windowSplashScreenBackground">#fff</item>
         <item name="windowSplashScreenAnimationDuration">2000</item>
         <item name="postSplashScreenTheme">@style/Theme.Aritmateka</item>
@@ -21,12 +17,12 @@
 
     <style name="Widget.App.Button.Fill" parent="Widget.Material3.Button">
         <item name="shapeAppearance">@drawable/button</item>
-        <item name="android:backgroundTint">@color/buttonColor</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
         <item name="fontFamily">@font/rubikbold</item>
     </style>
+
     <style name="Widget.App.Button.Outline" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:textColor">@color/buttonColor</item>
         <item name="shapeAppearance">@drawable/button_outline</item>

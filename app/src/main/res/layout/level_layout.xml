@@ -26,6 +26,16 @@
             android:textSize="20sp"
             android:textStyle="bold"
             tools:text="Level 1" />
+
+        <ImageView
+            android:id="@+id/lockDoneImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            android:contentDescription="lock" />
     </RelativeLayout>
 
 </com.google.android.material.card.MaterialCardView>

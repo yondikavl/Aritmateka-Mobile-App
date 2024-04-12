@@ -3,13 +3,12 @@ package com.yondikavl.aritmateka
 import android.app.Dialog
 import android.content.Intent
 import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.yondikavl.aritmateka.R
 import com.yondikavl.aritmateka.util.setupDialog
 import kotlin.system.exitProcess
 
@@ -41,9 +40,6 @@ class WelcomeActivity : AppCompatActivity() {
 
 
         val startBtn = findViewById<Button>(R.id.startBtn)
-        startBtn.startAnimation(
-            AnimationUtils.loadAnimation(this, R.anim.zoom_in_cut)
-        )
         startBtn.setOnClickListener {
             tickMusic.start()
             startActivity(Intent(this, LevelActivity::class.java))
