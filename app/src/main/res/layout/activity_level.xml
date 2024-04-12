@@ -18,6 +18,7 @@
         android:layout_centerInParent="true"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
+        android:layout_marginHorizontal="8dp"
         tools:listitem="@layout/level_layout"/>
 
 </RelativeLayout>
