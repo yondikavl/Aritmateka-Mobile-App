@@ -35,12 +35,11 @@
     <Button
         android:id="@+id/startBtn"
         android:layout_width="match_parent"
-        style="@style/Widget.App.Button.Fill"
         android:layout_height="60dp"
         android:textSize="24sp"
         android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="16dp"
         android:backgroundTint="@color/buttonColor"
-        android:background="@drawable/button"/>
+        android:background="@drawable/button_fill" />
 </androidx.constraintlayout.widget.ConstraintLayout>

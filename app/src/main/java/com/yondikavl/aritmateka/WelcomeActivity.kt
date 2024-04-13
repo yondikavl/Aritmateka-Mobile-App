@@ -4,7 +4,6 @@ import android.app.Dialog
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
@@ -33,11 +32,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
         onBackPressedDispatcher.addCallback(this,onBackPressedCallback)
 
-        // here setKeepOnScreenCondition true so, activity redirect another activity
-        // and some api call here
-        // if setKeepOnScreenCondition false so, activity code not redirect another activity
         splashScreen.setKeepOnScreenCondition { false }
-
 
         val startBtn = findViewById<Button>(R.id.startBtn)
         startBtn.setOnClickListener {
